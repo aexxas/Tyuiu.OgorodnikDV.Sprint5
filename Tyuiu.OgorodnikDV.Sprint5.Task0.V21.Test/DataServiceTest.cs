@@ -9,7 +9,7 @@ namespace Tyuiu.OgorodnikDV.Sprint5.Task0.V21.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = @"C:\Users\Dasha\source\repos\Tyuiu.OgorodnikDV.Sprint5\Tyuiu.OgorodnikDV.Sprint5.Task0.V21\bin\Debug\net8.0\OutputFileTask0.txt";
+            string path = @"C:\Users\Dasha\source\repos\Tyuiu.OgorodnikDV.Sprint5\Tyuiu.OgorodnikDV.Sprint5.Task0.V21\bin\Debug\net8.0\OutPutFileTask0.txt";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
