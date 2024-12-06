@@ -7,21 +7,25 @@ namespace Tyuiu.OgorodnikDV.Sprint5.Task5.V23.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            double min = 100000;
-            using (StreamReader reader = new StreamReader(path)) 
+            double min = double.MaxValue;
+            using (StreamReader reader = new StreamReader(path))
             {
                 string line;
-                
                 while ((line = reader.ReadLine()) != null)
                 {
                     line = line.Replace(".", ",");
-                    if (Convert.ToDouble(line) < min)
+                    string[] num = line.Split(' ');
+                    foreach (string s in num)
                     {
-                        min = Convert.ToDouble(line);
+                        double d = double.Parse(s);
+                        if ((d != Math.Round(d)) && (d < min))
+                        {
+                            min = d;
+                        }
                     }
                 }
             }
-            return min;
+            return Math.Round(min, 3);
         }
     }
 }
