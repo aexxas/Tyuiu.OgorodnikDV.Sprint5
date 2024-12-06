@@ -25,7 +25,7 @@ namespace Tyuiu.OgorodnikDV.Sprint5.Task5.V23
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string path = $@"C:\Users\Dasha\source\repos\Tyuiu.OgorodnikDV.Sprint5\Tyuiu.OgorodnikDV.Sprint5.Task5.V23\bin\Debug\net8.0\InPutDataFileTask5V23.txt";
+            string path = $@"C:\DataSprint5\InPutDataFileTask5V23.txt";
 
             Console.WriteLine("Данные находятся в файле: " + path);
             Console.WriteLine("***************************************************************************");
